@@ -1,0 +1,161 @@
+/*Vamos a quitar todos los padding y margin (rellenos y margenes)*/
+body{
+    padding: 0;
+    margin: 0;
+    /*aqui subimos un nivel con los 2 puntos y escogemos el nombre de la carpeta/nombre de la carpeta de imagenes/nombre de la imagen.... Como la imagen es grande le decimos que no queremos que se repita,que este centrada y enlazada hasta arriba*/
+    background: url(../Inicio/img/patron1.jpg) no-repeat center top;
+    /*Vamos a darle el tamaño para que cubra toda la pantalla*/
+   background-size: cover;
+    /*Vamos a cambiarle el estilo de fuente*/
+    font-family: sans-serif;
+    /*Vamos a decirle que el tamaño del alto de nuestra imagen sea del 100vh (Viewheigth)altura de la vista*/
+    height: 100vh;
+}
+
+/*Vamos a empezar a diseñar el espacio del login*/
+.box{
+    /*todo se va a la izquiera en un espacio de una anchura de  320px*/
+    width: 320px;
+    /*le vamos a poner una altura de 420*/
+    height: 420px;
+    /*Le vamos a poner un fondo de color negro*/
+    background: #8b9dc3;
+    color:#fff;
+    /*Le indicamos que se va a ir arriba 50%*/
+    top: 50%;
+    /*le indicamos que se va a ir a la izquierda(derecha del programador) */
+    left: 50%;
+    /*Valor “position: absolute”
+    La posición de las capas con “position:absolute” se fija mediante unas coordenadas, que vienen dadas por los atributos top y left. El punto inicial de estas coordenadas es la esquina superior izquierda de la caja que contiene los elementos.*/
+    position: absolute;
+    /*Vamos a centrarlo 
+    Sumario. La propiedad CSS transform te permite modificar el espacio de coordenadas del modelo de formato visual CSS. Usándola, los elementos pueden ser trasladados, rotados, escalados o sesgados de acuerdo a los valores establecidos. Si la propiedad tiene un valor diferente a none, se creará un contexto de pila.*/
+    transform: translate(-50%, -50%);
+    /*box-sizing es una propiedad CSS para cambiar el modelo de caja por defecto de los navegadores. El ancho de un elemento se altera si se le aplica un borde o un padding. Eso es porque la anchura del elemento que tu especificas con CSS, por defecto no incluye borde ni padding.*/
+    box-sizing: border-box;
+    /*el padding para que tengan un pequeño espaciado interno de 70px hacia arriba y de 30px hacia los lados*/
+    padding: 70px 30px;
+    /*esto es para darle un sombreado a la caja el sombreado va a medir 5px 5px y 3px de difuminado y de color negro*/
+    box-shadow: 5px 5px 3px black;
+}
+
+ /*vamos a manipular el logo*/
+ .box .logo{
+     /* le vamos a dar un ancho de 150px */
+    width: 120px;
+    /*el alto de 150px*/
+    height: 120px;
+    /*Vamos a convertirlo a circulo*/
+    border-radius: 50%;
+    /*Vamos a colocarlo adelante (sobre,encima del demas contenido)*/
+    position: absolute;
+    /*Vamos a colocarle las posiciones para que se vaya hasta arriba de la caja*/
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+/*Vamos a manipular el titulo*/
+.box h1{
+    /*Vamos a quitarle todos los espaciados*/
+    margin: 0;
+    /*Vamos a darle un pequeño espaciado hacia abajo*/
+    padding: 0 0 20px;
+    /*Vamos a centrarlo*/
+    text-align: center;
+    /*Vamos a cambiarle el tamaño de la letra*/
+    font-size: 22px;
+
+}
+
+/*Vamos a manipular las etiquetas*/
+.box label{
+    /*Vamos a quitarle todos los espaciados*/
+    margin: 0;
+    padding: 0;
+    /*Vamos a remarcarle el texto*/
+    font-weight: bold;
+    /*Vamos  a hacer que este en una sola linea*/
+    display: block;
+   
+}
+
+/*Vamos a manipular los inputs*/
+.box input{
+    /*Vamos  a decirle que cada input abarque el 100%*/
+    width: 100%;
+    /*Vamos a darle un margen hacia abajo*/
+    margin-bottom: 20px;
+}
+
+/*Vamos a manipular los input de tipo texto como el de tipo password*/
+.box input[type="text"],
+.box input[type="password"]{
+    /*Vamos a quitarle el borde*/
+    border: none;
+    /*Vamos a darle un borde hacia abajo y colocarle una pequeña linea divisoria de 1px,que sea solida y de color blanco*/
+    border-bottom: 1px solid  #fff;
+    /*Vamos a quitarle el fondo y le decimos que sera transparente*/
+    background: transparent;
+    /*Vamos a quitarle el outline*/
+    outline: none;
+    /*Vamos s adecirle que va a tener un alto de 40px*/
+    height: 40px;
+    /*Vamos a colocarle un color de texto blanco*/
+    color: #fff;
+    /*Tamaño de la letra que va a tener*/
+    font-size: 16px;
+}
+
+.box input[type="submit"]{
+    /*Vamos a quitarle el borde*/
+    border: none;
+    /*Vamos a quitarle el outline*/
+    outline: none;
+    /*Vamos s adecirle que va a tener un alto de 40px*/
+    height: 40px;
+    background:#008080;
+    color:#fff;
+    font-size: 18px;
+    /*Vamos a hacerlo el boton ovalado con 20px hacia todos los lados*/
+    border-radius: 20px;
+
+}
+
+.box a{
+    /*Vamos a quitarle la decoracion por defecto*/
+    text-decoration: none;
+    font-size: 15px;
+    /*Vamos a colocarle una linea divisoria o de espaciado*/
+    line-height: 20px;
+    /*Vamos a cambiar el color de la fuente*/
+    color: #333333;
+}
+/*la etiqueta a va a cambiar de color cuando pongamos el cursor sobre el*/
+.box a:hover{
+    color: #fff;
+}
+/*Voy a manipular el footer*/
+.box footer{
+    /*le cambio el color de la fuente*/
+    color: #b2d8d8;
+    /*le cambio el tamaño de la letra*/
+    font-size: 10px;
+    /*le doy un margen inferior de 20px*/
+    margin-top: 5px;
+
+}
+.box i{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
